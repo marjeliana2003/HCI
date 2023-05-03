@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="logo.png">
+<style>
+ 
+body {font-family: "Times New Roman", Georgia, Serif;}
+h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  color: white;
+  margin: 40px;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  margin-left: 14px;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  color: white;
+  margin-bottom: -12px;
+}
+img{
+  width: 85px;
+  height: 85px;
+  float: left;
+}
+.img1{
+  width: 1;
+  height: 100;
+}
+.h2e{
+  font-style: justify;
+  font-size: 25px;
+  color: black;
+  float: center;
+  text-align: center;
+}
+
+.w3-top{
+  background-color: green;
+}
+.mySlides {display:flex;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+.home{
+  min-height: 90vh;
+  display: flex;
+  background-image: url("school3.png");
+  background-size: clip;
+  background-position: center;
+  background-clip: text;
+  background-size: cover;
+  position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: green;
+  margin-right:13px; 
+  margin-left: 14px;
+
+}
+
+/* Slides */
+.mySlides {
+  display: inline-block;
+  padding: 80px;
+  text-align: justify;
+  position: center;
+  background-color: white; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: green;
+  margin-right: 13px;
+  margin-left: 14px;
+  margin-bottom: -10px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Add an italic font style to all quotes */
+p {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+
+.box{
+  margin:40px;
+  font-size: 16px;
+  text-align: justify;
+}
+.img2{
+  width: 70%;
+  height: 70%;
+  float:left;
+  margin-top: 300px;
+  margin-right: 20px;
+  margin-left: 40px;
+  margin-bottom: 200px;
+  image-resolution: from-image;
+  image-resolution: 300dpi;
+  image-resolution: from-image 300dpi;
+  image-resolution: 300dpi snap;
+}
+.dean{
+  background-image: url("Untitled design (2).png");
+  min-height: 90vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+
+}
+.p2{
+  color:white;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.staffs{
+  width: 100%;
+  height: 100%;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right:-14px;
+}
+
+.gallery-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  width: 140px;
+  height: 140px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Times New Roman", Georgia, Serif;
+  color: white;
+  text-align: left;
+  margin-right: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.other{
+  margin-top: 100%;
+}
+
+.last{
+  text-align: center;
+  background-color: green;
+  padding:20px;
+}
+
+.tracks1{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+.w3-bar-item, .w3-button{margin-top: 22px;}
+
+.h1e{
+  text-align: left;
+  float: left;
+  color:white;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.container .btn{
+  position: absolute;
+  
+  left: 140px;
+  margin-top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Playfair Display"; 
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+}
+.container .btn1{
+  position: absolute;
+  margin-left: 26%;
+  left: 140px;
+  margin-top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Playfair Display";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+}
+.container .btn2{
+  position: absolute;
+  margin-left: 51%; 
+  left: 140px;
+  margin-top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Playfair Display";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+}
+.container .btn3{
+  position: absolute;
+  margin-left:76%; 
+  left: 140px;
+  margin-top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Playfair Display";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+}
+.container .btn:hover{
+  background-color: #1a651a;
+  transition: 0.3s; 
+  color: black;
+} 
+.container .btn1:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+} 
+.container .btn2:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+} 
+.container .btn3:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+}
+.p2{
+  position: absolute;
+  margin-left: 511px;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Playfair Display";
+}
+footer{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="logo.png" alt="Logo">
+    <a href="#home" class="w3-bar-item w3-button" style="font-size:100;">CITE</a>
+    
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#faculties&staffs" class="w3-bar-item w3-button">Faculties & Staffs</a>
+      <a href="#tracks" class="w3-bar-item w3-button">Tracks</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+
+<header class="home" style="max-width:1600px;min-width:500px" id="home">
+  <img class="img1" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  
+<div class="slideshow-container">
+
+ 
+  <div class="mySlides">
+    <p>PHINMA – Cagayan de Oro College (PHINMA–COC) is a private non-sectarian college on Max Suniel St, Carmen, Cagayan de Oro, Philippines. The college offers a wide range of courses including criminology, education, arts and sciences, engineering, commerce, nursing, and vocational education.</p>
+    
+  </div>
+
+  <div class="mySlides">
+    <p>The college is subdivided into the following colleges: the Graduate School, the College of Arts and Sciences, the School of Criminology and Criminal Justice, the College of Education, the College of Management and Accountancy, the College of Engineering and Architecture, College of Information Technology, and the College of Nursing. <br>It also includes a complete preschool, elementary and secondary school units.</p>
+ 
+  </div>
+
+  <div class="mySlides">
+    <p>Since 2005, PHINMA COC has been owned and managed by the PHINMA Group, an investment firm with interests in including property, energy, education, and business process outsourcing. <br>The group's mission is "to help build our Nation through competitive and well-managed business enterprises that enable Filipinos to attain a better quality of life." With effective management as its distinctive edge, it aims to give Filipinos improved access to the essentials of a dignified life.</p>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    <h1 class="head">PHINMA CAGAYAN DE ORO COLLEGE</h1>
+
+  </div>
+  <hr>
+</header>
+</div>
+</div>
+  <section id="about">
+  <h2 class="h2e"> What is Information Technology?</h2>
+  <div class="box">Information technology (IT) is the creation, processing, storage, secure transmission, and exchange of all forms of electronic data. IT includes the use of computers, networking, storage, and other physical devices. As opposed to technology utilized for personal or leisure purposes, IT is typically used in the context of corporate activities. Telecommunications and computer technology are both included in the business usage of IT.</div>
+  
+  <h2 class="h2e"> What is Information Technology in PHINMA COC?</h2>
+  <div class="box">The BS Information Technology program provides students with skills and knowledge needed in relevant emerging high-growth areas in the industry. Through our program, we train students with the development and management of contemporary areas such as cloud computing and applications, analytics and data science, artificial intelligence, and the Internet of Things. We use a curriculum based on inputs and guidance from practicing industry experts.</div>
+</div>
+      <hr>
+    </div>
+  </div>
+ 
+  <section id="faculties&staffs">
+  <div class="dean">
+  <img class="img2" src="dean.png" alt="Sir Dean"><p class="p2"></p>
+  <h1 class="h1e">Faculties and Staffs</h1>
+
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 1">
+    <p class="description">Villanueva, Love Jean N.</p>
+    <p class="description"> Programming, <br>Web Development</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 2">
+    <p class="description">Taypin, Joannie Mae T.</p>
+    <p class="description"> Programming, <br>Web Development</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 3">
+    <p class="description">Belmes, Jayson</p>
+    <p class="description"> Database, Programming, <br>Web Development, HCI. </p>
+
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 4">
+    <p class="description">Capaque, Mosheh Cyril C.</p>
+    <p class="description">Programming, Basic Electronics, Hardware Networking,</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 5">
+    <p class="description">Cainglet, Riel Jun E.</p>
+    <p class="description"> Programming, UI/UX, IT Project Management, Web Development, Digital Arts.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 6">
+    <p class="description">Manalang, Harvey J.</p>
+    <p class="description"> unknown</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="dean.png" alt="Image 7">
+    <p class="description">Rolola, Angeline</p>
+    <p class="description">Academic Secretary in CITE, Multimedia</p>
+  </div>
+</div>
+
+
+  </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+
+
+
+
+<section id="tracks">
+<div class="tracks">
+ <div class="container">
+  <img class="tracks1" src="Untitled design (4).png" alt="Tracks">
+  <hr>
+  <p class="p2"><b>Tracks<b></p>
+  <button class="btn">Computer Security</button>
+  <button class="btn1">Digital Arts</button>
+  <button class="btn2">Business Informatics</button>
+  <button class="btn3">Software Development</button>
+  
+ 
+
+
+</div>
+</div>
+<hr>
+
+
+
+
+  <section id="contact">
+  <div class="w3-container w3-padding-64">
+    <h1>Contact</h1><br>
+    <p>Do you want to learn more about us?</p>
+    <p>Leave a message bellow</p>
+    <p class="w3-text-blue-grey w3-large"><b></b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<footer>
+  <p class="last">&copy; All copyrights to PHINMA COC</a></p>
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
+</body>
+</html>

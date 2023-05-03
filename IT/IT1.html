@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="logo.png">
+<style>
+ 
+body {font-family: "Times New Roman", Georgia, Serif;}
+h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  color: white;
+  margin: 40px;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  margin-left: 14px;
+  font-style: "Garamond";
+  letter-spacing: 5px;
+  color: white;
+  margin-bottom: -12px;
+  text-align: center;
+}
+img{
+	width: 85px;
+	height: 85px;
+	float: left;
+}
+.img1{
+	width: 1;
+	height: 100;
+}
+.h2e{
+	font-style: justify;
+	font-size: 25px;
+	color: black;
+	float: center;
+	text-align: center;
+  line-height: 1.9%;
+}
+
+.w3-top{
+	background-color: green;
+}
+.mySlides {display:flex;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+.home{
+	min-height: 90vh;
+	display: flex;
+	background-image: url("school3.png");
+	background-size: clip;
+	background-position: center;
+	background-clip: text;
+	background-size: cover;
+	position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: green;
+  margin-right:13px; 
+  margin-left: 17px;
+  opacity:0.8;
+
+}
+
+/* Slides */
+.mySlides {
+  display: inline-block;
+  padding: 80px;
+  text-align: justify;
+  position: center;
+  background-color: white; 
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: green;
+  margin-right: 13px;
+  margin-left: 14px;
+  margin-bottom: -10px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Add an italic font style to all quotes */
+p {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+
+.box{
+	margin:40px;
+	font-size: 16px;
+	text-align: justify;
+}
+.img2{
+	width: 25%;
+	height: 25%;
+	float:left;
+  margin-top: 220px;
+	margin-left: -150px;
+	margin-bottom: 100px;
+}
+.dean{
+	background-image: url("Untitled design (2).png");
+	min-height: 90vh;
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: cover;
+  text-align: justify;
+
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.staffs{
+  width: 100%;
+  height: 100%;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 100px;
+
+}
+
+.gallery-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.gallery-item img {
+  max-width: 100%;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 16px;
+  font-family: "Arial";
+  color: white;
+  text-align: left;
+  margin-right: 100px;
+  line-height: 150%;
+  margin: 5.5px;
+  margin-left:0px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.other{
+  margin-top: 100%;
+}
+.last{
+  text-align: center;
+  background-color: #1a651a;
+  padding:20px;
+  font-family: "Playfair Display";
+  color: white;
+  padding: 100px;
+  margin-bottom: 0px;
+}
+
+
+.tracks1{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+  margin-bottom: 100px;
+
+}
+
+.w3-bar-item, .w3-button{margin-top: 22px; font-size: 20px;}
+
+.h1e{
+  text-align: center;
+  color:white;
+  font-style: "Garamond";
+  font-size: 20px;
+}
+.container{
+  position: relative;   
+  width: 100%;
+  max-width: 100%
+ 
+}
+.container .btn{
+  position: absolute;
+  left: 160px;
+  margin-top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Arial"; 
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 208px;
+  height: 60px;
+}
+.container .btn1{
+  position: absolute;
+  margin-left:26.7%;
+  left: 140px;
+  margin-top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Arial";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 208px;
+  height: 60px;
+}
+.container .btn2{
+  position: absolute;
+  margin-left: 52.5%; 
+  left: 140px;
+  margin-top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Arial";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 208px;
+  height: 60px;
+}
+.container .btn3{
+  position: absolute;
+  margin-left:77.7%; 
+  left: 140px;
+  margin-top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #009900;
+  font-family: "Arial";
+   padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  width: 230px;
+  height: 60px;
+}
+.container .btn:hover{
+  background-color: #1a651a;
+  transition: 0.3s; 
+  color: black;
+} 
+.container .btn1:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+} 
+.container .btn2:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+} 
+.container .btn3:hover{
+  background-color: #1a651a;
+  transition: 0.3s;
+  color: black;
+}
+.p2{
+  position: absolute;
+  font-size: 55px;
+  font-family: "Garamond";
+  color: white;
+  margin-left: 41.5%;
+  text-align: justify-all;
+  margin-top: 120px;
+}
+a{
+  text-decoration: none;
+  text-align: center;
+}
+.h4e{
+  float: center;
+  margin-left:40px;
+ }
+.h4a{
+  margin:10px;
+  margin-top: 42%;
+  position: absolute;
+  right: 68.8%;
+  text-align: center;
+  font-family: Arial;
+}
+.h4b{
+  margin-top: 42%;
+  position: absolute;
+  right: 67.9%;
+  top: 155%;
+  font-family: Arial;
+}
+
+.h1c{
+  color: black ;
+}
+.contact{
+  margin:36px 36px;
+}
+.footer{
+background:#006600;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:white;
+font-size:0.8em;
+}
+.footer .row a{
+text-decoration:none;
+color:white;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+
+
+
+
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  	<img src="logo.png" alt="Logo">
+    <a href="#home" class="w3-bar-item w3-button" style="font-size:100;">CITE</a>
+    
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#faculties&staffs" class="w3-bar-item w3-button">Faculties & Staff</a>
+      <a href="#tracks" class="w3-bar-item w3-button">Tracks</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+ 
+<header class="home" style="max-width:1600px;min-width:500px" id="home">
+  <img class="img1" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large">
+
+
+<div class="slideshow-container">
+
+ 
+  <div class="mySlides">
+    <p>PHINMA – Cagayan de Oro College (PHINMA–COC) is a private non-sectarian college on Max Suniel St, Carmen, Cagayan de Oro, Philippines. The college offers a wide range of courses including criminology, education, arts and sciences, engineering, commerce, nursing, and vocational education.</p>
+    
+  </div>
+
+  <div class="mySlides">
+    <p>The college is subdivided into the following colleges: the Graduate School, the College of Arts and Sciences, the School of Criminology and Criminal Justice, the College of Education, the College of Management and Accountancy, the College of Engineering and Architecture, College of Information Technology, and the College of Nursing. It also includes a complete preschool, elementary and secondary school units.</p>
+ 
+  </div>
+
+  <div class="mySlides">
+    <p>Since 2005, PHINMA COC has been owned and managed by the PHINMA Group, an investment firm with interests in including property, energy, education, and business process outsourcing. <br>The group's mission is "to help build our Nation through competitive and well-managed business enterprises that enable Filipinos to attain a better quality of life." With effective management as its distinctive edge, it aims to give Filipinos improved access to the essentials of a dignified life.</p>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+   <h1>PHINMA CAGAYAN DE ORO COLLEGE</h1>
+
+  </div>
+  <hr>
+</header>
+</div>
+</div>
+  
+ 	<section id="about"><h3 class="h2e"> What is Information Technology?</h3>
+  <div class="box">Information technology (IT) is the creation, processing, storage, secure transmission, and exchange of all forms of electronic data. IT includes the use of computers, networking, storage, and other physical devices. As opposed to technology utilized for personal or leisure purposes, IT is typically used in the context of corporate activities. Telecommunications and computer technology are both included in the business usage of IT.</div>
+  <hr>
+ 
+  <h3 class="h2e"> What is Information Technology in PHINMA COC?</h3>
+  <div class="box">The BS Information Technology program provides students with skills and knowledge needed in relevant emerging high-growth areas in the industry. Through our program, we train students with the development and management of contemporary areas such as cloud computing and applications, analytics and data science, artificial intelligence, and the Internet of Things. We use a curriculum based on inputs and guidance from practicing industry experts.</div>
+</div>
+
+
+    </div>
+  </div>
+ 
+  <section id="faculties&staffs">
+
+  <div class="dean">
+    <hr>
+    <h1 class="h4e"> <b>Faculties & Staff</b></h1>
+  <img class="img2" src="deandean.png" alt="Sir Dean">
+  <h4 class="h4a">The Head of the Faculty</h4>
+  <h4 class=h4b><b>Darwin Mehila Galudo</b></h4> 
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <img src="love1.png" alt="Ma'am Love">
+    <p class="description">Villanueva, Love Jean N.</p>
+    <p class="description"> • Programming <br>• Web Development</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="typin1.png" alt="Ma'am Typin">
+    <p class="description">Taypin, Joannie Mae T.</p>
+    <p class="description"> • Programming <br>• Web Development</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="belmes.png" alt="Sir Jayson">
+    <p class="description">Belmes, Jayson</p>
+    <p class="description"> • Programming</p>
+  </div>
+   <div class="gallery-item">
+    <img src="simo.png" alt="Sir Jayson">
+    <p class="description"> Simo, Jeremiah</p> 
+    <p class="description"> • Database <br>• Programming<br>• Web Development <br>• HCI. </p>
+  </div>
+  
+   <div class="gallery-item">
+    <img src="macario.png" alt="Sir Jayson">
+    <p class="description">Macario, Adormie</p>
+    <p class="description"> • Database <br>• Programming<br>• Web Development <br>• HCI. </p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="mosheh1.png" alt="Sir Mosheh">
+    <p class="description">Capaque, Mosheh Cyril C.</p>
+    <p class="description">• Programming <br>• Basic Electronics <br>• Hardware Networking</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="rj.png" alt="Image 5">
+    <p class="description">Cainglet, Riel Jun E.</p>
+    <p class="description"> • Programming <br>• UI/UX <br>• IT Project Management<br> • Web Development <br>• Digital Arts.</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="harvey1.png" alt="Image 6">
+    <p class="description">Manarang, Harvey J.</p>
+    <p class="description">• Discrete Structures <br>• Programming</p>
+  </div>
+
+    <div class="gallery-item">
+    <img src="harvey.png" alt="Image 6">
+    <p class="description">Actub, Lordneil</p>
+    <p class="description">• Discrete Structures <br>• Programming</p>
+  </div>
+  
+  <div class="gallery-item">
+    <img src="secretary.png" alt="Image 7">
+    <p class="description">Rolola, Angeline</p>
+    <p class="description">• Academic Secretary in CITE <br>• Multimedia</p>
+  </div>
+</div>
+
+
+
+  </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+
+<div class="tracks">
+  <section id="tracks">
+ <div class="container">
+  <img class="tracks1" src="Untitled design (4).png" alt="Tracks">
+
+  <p class="p2"><b>TRACKS</b></p>  
+  <a button class="btn" href="file:///C:/Users/Whisabel%20Dacoco/Desktop/IT/IT/computersecurity.html">Computer Security</button></a>
+  <a button class="btn1" href="file:///C:/Users/Whisabel%20Dacoco/Desktop/IT/IT/digitalarts.html">Digital Arts</button></a>
+
+  <a button class="btn2" href="file:///C:/Users/Whisabel%20Dacoco/Desktop/IT/IT/businessinfo.html">Business Informatics</button></a>
+  <a button class="btn3" href="file:///C:/Users/Whisabel%20Dacoco/Desktop/IT/IT/softwaredeveloper.html">Software Development</button></a>
+
+</div>
+</div>
+</section>
+<hr>
+
+
+  <div class="contact">
+    <h1 class="h1c">Contact Us</h1><br>
+    <p>Do you want to learn more about us?</p>
+    <p> TEL. NO.: <a href="">+63 (088) 858-5867</a>, MOBILE NO.: <a href="">+63 917-376-5105</a> <br> You can also email us on <a href="">info.coc@phinmaed.com</a>, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <section id="contact">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required email="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+
+    </form>
+  </div>
+</div>
+</section>
+
+
+ 
+
+<footer>
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/groups/phinmacoc.it"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/phinmacoc/"><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/@citcreatives/videos"><i class="fa fa-youtube"></i></a>
+<a href="https://twitter.com/phinmacoc"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+© 2023 PHINMA  Education | All rights reserved | Privacy Policy
+Site by <a href="file:///F:/htmlreal/thedevs.html"><b>Stellar</b></a>
+</div>
+</div>
+</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>	
+
+</body>
+</html>
